@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jeopardy!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+</head>
+<body>
+ <!--- <img src="Jeopardy-tournament-of-champions-1014x570.jpg" alt="Jeopardy Logo" id="logo" />
+  <h1>Jeopardy!</h1> ----> 
+  <button id="play">Start the Game!</button>
+
+  <section>
+    <table>
+      <thead><tr id="categories"></tr></thead>
+      <tbody id="clues"></tbody>
+    </table>
+    <div id="active-clue"></div>
+    <form id="answer-form" class="hidden">
+      <input type="text" id="user-answer" placeholder="Your answer..." />
+      <button type="submit">Submit</button>
+    </form>
+    <div id="score">Score: 0</div>
+  </section>
+
+  <div id="spinner" class="disabled"><i class="fa fa-spin fa-spinner"></i></div>
+
+  <audio id="intro-music" src="jeopardy-themelq.mp3"></audio>
+  <audio id="clue-sound" src="sounds/click.mp3"></audio>
+
+  <script src="https://unpkg.com/jquery"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="https://unpkg.com/lodash"></script>
+  <script src="script.js"></script>
+</body>
+</html>

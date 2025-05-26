@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('Jeopardy-tournament-of-champions-1014x570.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #ffeb3b;
+  text-shadow: 2px 2px #000;
+}
+
+#logo {
+  width: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+button#play {
+  background-color: #ffeb3b;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button#play:hover {
+  background-color: #fdd835;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+th, td {
+  border: 2px solid #ffffff;
+  padding: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.clue {
+  background-color: #283593;
+  margin: 5px;
+  border-radius: 6px;
+}
+
+.clue:hover {
+  background-color: #3949ab;
+}
+
+#active-clue {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 1.3rem;
+  background-color: #1e88e5;
+  border-radius: 8px;
+  min-height: 60px;
+  cursor: pointer;
+}
+
+#spinner {
+  display: none;
+}
+
+#spinner.show {
+  display: block;
+}
+
+#answer-form {
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+#score {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffeb3b;
+}
